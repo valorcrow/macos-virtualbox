@@ -65,7 +65,7 @@ STAGE_NUMBER_BG_FG="${BG_L_BLACK}${FG_LB_RED}"
 currentBranch=$(git symbolic-ref -q HEAD)
 currentBranch=${currentBranch##refs/heads/}
 currentBranch=${currentBranch:-HEAD}
-declare -a gitRemotesToFetch=("origin")
+declare -a gitRemotesToFetch=("origin" "upstream")
 declare -a gitBranchesToPull=("${currentBranch}")
 
 #===================================================================================================
